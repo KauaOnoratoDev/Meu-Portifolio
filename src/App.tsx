@@ -1,9 +1,13 @@
-import { GlobalStyle } from "./styles";
+import NavBar from './components/NavBar'
+import { GlobalStyle } from './styles'
 
 function App() {
   return (
     <>
       <GlobalStyle />
+      <div className="container">
+        <NavBar />
+      </div>
     </>
   )
 }
