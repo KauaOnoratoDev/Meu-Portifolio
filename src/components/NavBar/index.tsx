@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
-import githubIcon from '../assets/images/github-icon.png'
-import linkedinIcon from '../assets/images/linkedin-icon.png'
+import githubIcon from '../../assets/images/github-icon.png'
+import linkedinIcon from '../../assets/images/linkedin-icon.png'
 import * as S from './styles'
 
 const NavBar = () => {

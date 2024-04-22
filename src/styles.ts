@@ -21,7 +21,7 @@ export const GlobalStyle = createGlobalStyle`
         list-style: none;
 
         .container {
-            max-width: 1320px;
+            max-width: 1080px;
             width: 100%;
             margin: 0 auto;
         }

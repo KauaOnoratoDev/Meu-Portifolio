@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { colors } from '../styles'
+import { colors } from '../../styles'
 
 export const Container = styled.div`
   max-width: 640px;
@@ -8,7 +8,7 @@ export const Container = styled.div`
   border-radius: 100px;
   padding: 24px;
   font-size: 20px;
-  margin: 32px auto;
+  margin: 32px auto 170px;
 `
 
 export const NavBarStyle = styled.nav`
