@@ -3,7 +3,7 @@ import { colors } from '../../styles'
 
 export const Container = styled.footer`
   width: 100%;
-  margin: 150px auto 32px;
+  margin: 100px auto 32px;
 
   span {
     color: ${colors.gray400};

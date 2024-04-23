@@ -8,7 +8,7 @@ export const Container = styled.div`
   border-radius: 100px;
   padding: 24px;
   font-size: 20px;
-  margin: 32px auto 170px;
+  margin: 32px auto 100px;
 `
 
 export const NavBarStyle = styled.nav`

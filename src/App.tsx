@@ -1,21 +1,22 @@
-import Hero from './components/Hero'
-import IntroExperiences from './components/Carousel'
+import { BrowserRouter } from 'react-router-dom'
+
 import NavBar from './components/NavBar'
-import { GlobalStyle } from './styles'
-import Technologies from './components/Technologies'
 import Footer from './components/Footer'
+
+import { GlobalStyle } from './styles'
+import RoutesPage from './routes'
 
 function App() {
   return (
     <>
-      <GlobalStyle />
-      <div className="container">
-        <NavBar />
-        <Hero />
-        <IntroExperiences />
-        <Technologies />
-        <Footer />
-      </div>
+      <BrowserRouter>
+        <GlobalStyle />
+        <div className="container">
+          <NavBar />
+          <RoutesPage />
+          <Footer />
+        </div>
+      </BrowserRouter>
     </>
   )
 }

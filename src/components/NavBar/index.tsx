@@ -3,6 +3,7 @@ import { useState } from 'react'
 import githubIcon from '../../assets/images/github-icon.png'
 import linkedinIcon from '../../assets/images/linkedin-icon.png'
 import * as S from './styles'
+import { Link } from 'react-router-dom'
 
 const NavBar = () => {
   const [isActive, setIsActive] = useState(1)
@@ -12,19 +13,22 @@ const NavBar = () => {
       <S.NavBarStyle>
         <S.List>
           <S.ListItem onClick={() => setIsActive(1)}>
-            <a href="#" className={isActive === 1 ? 'is-active' : ''}>
+            <Link to={'/'} className={isActive === 1 ? 'is-active' : ''}>
               kauaonorato
-            </a>
+            </Link>
           </S.ListItem>
           <S.ListItem onClick={() => setIsActive(2)}>
-            <a href="#" className={isActive === 2 ? 'is-active' : ''}>
+            <Link to={'/'} className={isActive === 2 ? 'is-active' : ''}>
               formação
-            </a>
+            </Link>
           </S.ListItem>
           <S.ListItem onClick={() => setIsActive(3)}>
-            <a href="#" className={isActive === 3 ? 'is-active' : ''}>
+            <Link
+              to={'/experiences'}
+              className={isActive === 3 ? 'is-active' : ''}
+            >
               experiências
-            </a>
+            </Link>
           </S.ListItem>
         </S.List>
         <S.List>
