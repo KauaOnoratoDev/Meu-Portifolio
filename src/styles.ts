@@ -29,5 +29,19 @@ export const GlobalStyle = createGlobalStyle`
 
     body {
         background-color: ${colors.gray900};
+
+        &::-webkit-scrollbar {
+          width: 12px;
+        }
+
+        &::-webkit-scrollbar-track {
+          background: ${colors.gray900};
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background-color: ${colors.gray800};
+          border-radius: 20px;
+        }
     }
+
 `
