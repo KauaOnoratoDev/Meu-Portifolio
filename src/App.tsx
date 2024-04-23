@@ -1,4 +1,5 @@
 import Hero from './components/Hero'
+import IntroExperiences from './components/Carousel'
 import NavBar from './components/NavBar'
 import { GlobalStyle } from './styles'
 
@@ -9,6 +10,7 @@ function App() {
       <div className="container">
         <NavBar />
         <Hero />
+        <IntroExperiences />
       </div>
     </>
   )
