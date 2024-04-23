@@ -3,6 +3,7 @@ import IntroExperiences from './components/Carousel'
 import NavBar from './components/NavBar'
 import { GlobalStyle } from './styles'
 import Technologies from './components/Technologies'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Hero />
         <IntroExperiences />
         <Technologies />
+        <Footer />
       </div>
     </>
   )

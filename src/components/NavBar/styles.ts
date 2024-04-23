@@ -46,4 +46,9 @@ export const ListItem = styled.li`
   a {
     color: ${colors.purple};
   }
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
 `
