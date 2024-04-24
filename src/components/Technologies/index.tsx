@@ -16,8 +16,8 @@ const Technologies = () => {
               {e.tech.map((item) => (
                 <>
                   <S.Item>
-                    <img src="https://via.placeholder.com/32x32" alt="" />
-                    {item}
+                    <img src={item.img} alt="" />
+                    {item.name}
                   </S.Item>
                 </>
               ))}

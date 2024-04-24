@@ -27,6 +27,13 @@ export const Item = styled.li`
   height: 150px;
   border-radius: 60px;
   margin: 0 20px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 60px;
+    object-fit: contain;
+  }
 `
 
 export const Botao = styled.button`

@@ -22,6 +22,11 @@ export const Text = styled.p`
   font-size: 20px;
   color: ${colors.gray400};
   margin-bottom: 40px;
+
+  span {
+    color: ${colors.gray300};
+    font-weight: bold;
+  }
 `
 
 export const Image = styled.img`

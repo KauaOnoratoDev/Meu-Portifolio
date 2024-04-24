@@ -11,9 +11,11 @@ const Hero = () => {
       <div>
         <S.Title>Olá, eu sou o Kauã</S.Title>
         <S.Text>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod neque
-          laborum totam nam cum, quidem minus voluptas, omnis harum, iusto rem a
-          quisquam voluptates odio corrupti iure molestias consequuntur? Dolore.
+          Como um <span>Full-Stack developer</span>, estou comprometido em
+          construir soluções que superem as expectativas. Constantemente
+          buscando aprendizado e crescimento, estou sempre pronto para encarar
+          novos desafios e colaborar em equipe para alcançar resultados
+          excepcionais!
         </S.Text>
         <S.Botao type="button">
           <Link

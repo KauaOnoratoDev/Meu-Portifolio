@@ -34,6 +34,8 @@ export const Item = styled.li`
     width: 360px;
     height: 360px;
     margin-right: 50px;
+    object-fit: cover;
+    border-radius: 50px;
   }
 `
 
