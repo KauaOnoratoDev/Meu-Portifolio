@@ -4,9 +4,10 @@ import { Provider } from 'react-redux'
 import NavBar from './components/NavBar'
 import Footer from './components/Footer'
 
-import { GlobalStyle } from './styles'
 import RoutesPage from './routes'
 import store from './store'
+
+import { GlobalStyle } from './styles'
 
 function App() {
   return (

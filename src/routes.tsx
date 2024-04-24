@@ -9,15 +9,17 @@ const RoutesPage = () => {
   const { status } = useSelector((state: RootReducer) => state.home)
 
   return (
-    <Routes>
-      {status === 'home' && <Route path="/" element={<Home />} />}
-      {status === 'experiences' && (
-        <Route path="/experiences" element={<Experiences />} />
-      )}
-      {status === 'qualifications' && (
-        <Route path="/qualifications" element={<Qualifications />} />
-      )}
-    </Routes>
+    <>
+      {status === 'home' && <Home />}
+      <Routes>
+        {status === 'experiences' && (
+          <Route path="/experiences" element={<Experiences />} />
+        )}
+        {status === 'qualifications' && (
+          <Route path="/qualifications" element={<Qualifications />} />
+        )}
+      </Routes>
+    </>
   )
 }
 
