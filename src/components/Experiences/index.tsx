@@ -40,9 +40,9 @@ const ExperiencesComponent = () => {
     <S.Container>
       <div>
         <h2>
-          Aqui, você pode conhecer um pouco sobre as minhas experiências,
+          &lt; Aqui, você pode conhecer um pouco sobre as minhas experiências,
           desenvolvi durante a minha jornada como um{' '}
-          <span>Full-Stack developer. </span>
+          <span>Full-Stack developer.</span> /&gt;
         </h2>
       </div>
       <ul>

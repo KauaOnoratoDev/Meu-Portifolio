@@ -18,7 +18,10 @@ const NavBar = () => {
             </Link>
           </S.ListItem>
           <S.ListItem onClick={() => setIsActive(2)}>
-            <Link to={'/'} className={isActive === 2 ? 'is-active' : ''}>
+            <Link
+              to={'/qualifications'}
+              className={isActive === 2 ? 'is-active' : ''}
+            >
               formação
             </Link>
           </S.ListItem>

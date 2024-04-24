@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import * as S from './styles'
 
 const Hero = () => {
@@ -11,7 +12,7 @@ const Hero = () => {
           quisquam voluptates odio corrupti iure molestias consequuntur? Dolore.
         </S.Text>
         <S.Botao type="button">
-          <a href="">Veja experiências</a>
+          <Link to={'/experiences'}>Veja experiências</Link>
         </S.Botao>
       </div>
       <S.Image src="https://via.placeholder.com/360x360" alt="" />

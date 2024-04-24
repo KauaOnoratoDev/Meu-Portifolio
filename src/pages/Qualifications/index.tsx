@@ -1,7 +1,7 @@
-const Qualifications = () => (
-  <div>
-    <h1></h1>
-  </div>
-)
+import QualificationsComponent from '../../components/Qualifications'
+
+const Qualifications = () => {
+  return <QualificationsComponent />
+}
 
 export default Qualifications
