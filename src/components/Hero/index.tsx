@@ -1,7 +1,11 @@
 import { Link } from 'react-router-dom'
 import * as S from './styles'
+import { useDispatch } from 'react-redux'
+import { changeStatus } from '../../store/reducers/home'
 
 const Hero = () => {
+  const dispatch = useDispatch()
+
   return (
     <S.Container>
       <div>
@@ -12,7 +16,12 @@ const Hero = () => {
           quisquam voluptates odio corrupti iure molestias consequuntur? Dolore.
         </S.Text>
         <S.Botao type="button">
-          <Link to={'/experiences'}>Veja experiências</Link>
+          <Link
+            onClick={() => dispatch(changeStatus('experiences'))}
+            to={'/experiences'}
+          >
+            Veja experiências
+          </Link>
         </S.Botao>
       </div>
       <S.Image src="https://via.placeholder.com/360x360" alt="" />
