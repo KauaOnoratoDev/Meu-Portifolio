@@ -27,7 +27,7 @@ export const List = styled.ul`
   border: 1px solid ${colors.gray700};
   border-radius: 12px;
   padding: 24px 32px;
-  margin: 0 32px 32px;
+  margin: 0 32px;
   color: ${colors.white};
   height: 100%;
 

@@ -1,21 +1,7 @@
+import { TechnologiesModels } from '../../models/TechnologiesModels'
 import * as S from './styles'
 
 const Technologies = () => {
-  const mock = [
-    {
-      name: 'Linguagens',
-      tech: ['JavaScript', 'TypeScript']
-    },
-    {
-      name: 'Frameworks',
-      tech: ['React', 'Vue']
-    },
-    {
-      name: 'Frameworks',
-      tech: ['React', 'Vue']
-    }
-  ]
-
   return (
     <S.Container>
       <h2>
@@ -23,7 +9,7 @@ const Technologies = () => {
         desenvolvedor.
       </h2>
       <div>
-        {mock.map((e) => (
+        {TechnologiesModels.map((e) => (
           <>
             <S.List>
               <h3>{e.name}</h3>

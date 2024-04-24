@@ -1,41 +1,7 @@
+import { ExperiencesModels } from '../../models/ExperiencesModels'
 import * as S from './styles'
 
 const ExperiencesComponent = () => {
-  const mock = [
-    {
-      projectName: 'Teste Projeto',
-      projectDescription:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo repellat ab, magnam accusantium nihil veniam nam ipsam quisquam reiciendis quas unde expedita officiis placeat, hic blanditiis harum modi aperiam. Repudiandae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci illo corrupti eaque voluptate! Expedita, odio. Iure omnis nesciunt repellendus, earum sit laborum quis quia eveniet alias officiis. Corrupti, unde itaque!',
-      deployLink: '#',
-      codeLink: '#',
-      projectImage: 'https://via.placeholder.com/400x400'
-    },
-    {
-      projectName: 'Teste Projeto',
-      projectDescription:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo repellat ab, magnam accusantium nihil veniam nam ipsam quisquam reiciendis quas unde expedita officiis placeat, hic blanditiis harum modi aperiam. Repudiandae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci illo corrupti eaque voluptate! Expedita, odio. Iure omnis nesciunt repellendus, earum sit laborum quis quia eveniet alias officiis. Corrupti, unde itaque!',
-      deployLink: '#',
-      codeLink: '#',
-      projectImage: 'https://via.placeholder.com/400x400'
-    },
-    {
-      projectName: 'Teste Projeto',
-      projectDescription:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo repellat ab, magnam accusantium nihil veniam nam ipsam quisquam reiciendis quas unde expedita officiis placeat, hic blanditiis harum modi aperiam. Repudiandae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci illo corrupti eaque voluptate! Expedita, odio. Iure omnis nesciunt repellendus, earum sit laborum quis quia eveniet alias officiis. Corrupti, unde itaque!',
-      deployLink: '#',
-      codeLink: '#',
-      projectImage: 'https://via.placeholder.com/400x400'
-    },
-    {
-      projectName: 'Teste Projeto',
-      projectDescription:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo repellat ab, magnam accusantium nihil veniam nam ipsam quisquam reiciendis quas unde expedita officiis placeat, hic blanditiis harum modi aperiam. Repudiandae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci illo corrupti eaque voluptate! Expedita, odio. Iure omnis nesciunt repellendus, earum sit laborum quis quia eveniet alias officiis. Corrupti, unde itaque!',
-      deployLink: '#',
-      codeLink: '#',
-      projectImage: 'https://via.placeholder.com/400x400'
-    }
-  ]
-
   return (
     <S.Container>
       <div>
@@ -46,8 +12,8 @@ const ExperiencesComponent = () => {
         </h2>
       </div>
       <ul>
-        {mock.map((e) => (
-          <S.Item key={e.projectName}>
+        {ExperiencesModels.map((e) => (
+          <S.Item key={e.id}>
             <img src={e.projectImage} alt="" />
             <S.Information>
               <h3>{e.projectName}</h3>

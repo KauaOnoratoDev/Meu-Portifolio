@@ -1,21 +1,14 @@
+import { QualificationsModels } from '../../models/QualificationsModels'
+
 import ellipse from '../../assets/images/Ellipse 2.png'
 import * as S from './styles'
 
 const QualificationsComponent = () => {
-  const mock = [
-    {
-      name: 'EBAC',
-      qualification: 'Certificado em Full-Stack Python',
-      date: ['Março 2023', 'Present'],
-      certificateLink: '#'
-    }
-  ]
-
   return (
     <>
       <ul>
-        {mock.map((e) => (
-          <S.Item key={e.certificateLink}>
+        {QualificationsModels.map((e) => (
+          <S.Item key={e.id}>
             <S.Information>
               <h3>{e.name}</h3>
               <p>{e.qualification}</p>

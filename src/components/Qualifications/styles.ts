@@ -5,6 +5,7 @@ export const Item = styled.li`
   border: 1px solid ${colors.gray700};
   border-radius: 80px;
   padding: 32px 45px;
+  margin-bottom: 32px;
   display: flex;
   justify-content: space-between;
   align-items: center;
