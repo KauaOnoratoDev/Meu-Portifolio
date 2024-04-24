@@ -4,8 +4,23 @@ import { colors } from '../../styles'
 export const Container = styled.div`
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+
+  > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  h2 {
+    font-size: 28px;
+    color: ${colors.gray400};
+    margin-bottom: 50px;
+    width: 60%;
+    text-align: center;
+  }
 `
 
 export const List = styled.ul`
@@ -14,6 +29,7 @@ export const List = styled.ul`
   padding: 24px 32px;
   margin: 0 32px 32px;
   color: ${colors.white};
+  height: 100%;
 
   h3 {
     margin-bottom: 16px;

@@ -5,7 +5,6 @@ import Technologies from '../../components/Technologies'
 const Home = () => (
   <>
     <Hero />
-    <Carousel />
     <Technologies />
   </>
 )

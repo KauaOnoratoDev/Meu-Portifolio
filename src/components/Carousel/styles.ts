@@ -15,14 +15,14 @@ export const List = styled.ul`
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: ${colors.white};
 `
 
 export const Item = styled.li`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: ${colors.purple};
+  background-color: ${colors.gray800};
   width: 300px;
   height: 150px;
   border-radius: 60px;
