@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { colors } from '../../styles'
+import { breakpoints, colors } from '../../styles'
 
 export const Container = styled.div`
   display: flex;
@@ -7,8 +7,26 @@ export const Container = styled.div`
   align-items: center;
   margin-bottom: 200px;
 
+  @media (max-width: ${breakpoints.desktop}) {
+    margin-bottom: 100px;
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+
   div {
     width: 50%;
+
+    @media (max-width: ${breakpoints.desktop}) {
+      width: 60%;
+    }
+
+    @media (max-width: ${breakpoints.mobile}) {
+      width: 100%;
+      text-align: center;
+    }
   }
 `
 
@@ -31,6 +49,19 @@ export const Text = styled.p`
 
 export const Image = styled.img`
   border-radius: 50%;
+  width: 360px;
+  height: 360px;
+
+  @media (max-width: ${breakpoints.desktop}) {
+    width: 240px;
+    height: 240px;
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    margin-top: 48px;
+    width: 180px;
+    height: 180px;
+  }
 `
 
 export const Botao = styled.button`

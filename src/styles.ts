@@ -11,6 +11,11 @@ export const colors = {
   purple: '#B292FF'
 }
 
+export const breakpoints = {
+  mobile: '767px',
+  desktop: '1024px'
+}
+
 export const GlobalStyle = createGlobalStyle`
     * {
         padding: 0;
@@ -24,6 +29,14 @@ export const GlobalStyle = createGlobalStyle`
             max-width: 1080px;
             width: 100%;
             margin: 0 auto;
+
+            @media (max-width: ${breakpoints.mobile}) {
+              width: 90%;
+            }
+
+            @media (max-width: ${breakpoints.desktop}) {
+              width: 90%;
+            }
         }
     }
 

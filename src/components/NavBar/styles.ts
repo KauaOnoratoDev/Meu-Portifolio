@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { colors } from '../../styles'
+import { breakpoints, colors } from '../../styles'
 
 export const Container = styled.div`
   max-width: 640px;
@@ -15,20 +15,39 @@ export const NavBarStyle = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: ${breakpoints.mobile}) {
+    flex-direction: column;
+  }
 `
 
 export const List = styled.ul`
   display: flex;
 
+  @media (max-width: ${breakpoints.mobile}) {
+    &:nth-child(1) {
+      flex-direction: column;
+    }
+  }
+
   &:nth-child(1) {
     li {
       margin-right: 32px;
+
+      @media (max-width: ${breakpoints.mobile}) {
+        margin: 0 0 16px;
+        text-align: center;
+      }
     }
   }
 
   &:nth-child(2) {
     li {
       margin-left: 32px;
+
+      @media (max-width: ${breakpoints.mobile}) {
+        margin: 0 8px;
+      }
     }
   }
 `

@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { colors } from '../../styles'
+import { breakpoints, colors } from '../../styles'
 
 export const Item = styled.li`
   border: 1px solid ${colors.gray700};
@@ -9,6 +9,15 @@ export const Item = styled.li`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: ${breakpoints.mobile}) {
+    flex-direction: column;
+    text-align: center;
+
+    a {
+      margin-top: 24px;
+    }
+  }
 
   a {
     color: ${colors.green};

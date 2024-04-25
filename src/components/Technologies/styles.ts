@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { colors } from '../../styles'
+import { breakpoints, colors } from '../../styles'
 
 export const Container = styled.div`
   width: 100%;
@@ -30,6 +30,16 @@ export const List = styled.ul`
   margin: 0 32px;
   color: ${colors.white};
   height: 100%;
+
+  @media (max-width: ${breakpoints.desktop}) {
+    margin: 24px;
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    margin-bottom: 24px;
+    max-width: 50%;
+    width: 100%;
+  }
 
   h3 {
     margin-bottom: 16px;

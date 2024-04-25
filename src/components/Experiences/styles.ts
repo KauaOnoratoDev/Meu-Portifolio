@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { colors } from '../../styles'
+import { breakpoints, colors } from '../../styles'
 
 export const Container = styled.div`
   width: 100%;
@@ -20,6 +20,14 @@ export const Container = styled.div`
 
   > div {
     width: 60%;
+
+    @media (max-width: ${breakpoints.mobile}) {
+      width: 100%;
+    }
+  }
+
+  ul {
+    width: 100%;
   }
 `
 
@@ -30,12 +38,27 @@ export const Item = styled.li`
   background-color: ${colors.gray800};
   border-radius: 80px;
 
+  @media (max-width: ${breakpoints.desktop}) {
+    flex-direction: column;
+  }
+
   img {
     width: 360px;
     height: 360px;
     margin-right: 50px;
     object-fit: cover;
     border-radius: 50px;
+
+    @media (max-width: ${breakpoints.desktop}) {
+      width: 100%;
+      margin-bottom: 24px;
+    }
+
+    @media (max-width: ${breakpoints.mobile}) {
+      width: 100%;
+      border-radius: 25px;
+      margin-bottom: 24px;
+    }
   }
 `
 
