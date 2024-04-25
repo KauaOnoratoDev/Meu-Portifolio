@@ -31,10 +31,6 @@ export const TechnologiesModels: Technologies[] = [
       {
         name: 'TypeScript',
         img: typescript
-      },
-      {
-        name: 'Python',
-        img: python
       }
     ]
   },
@@ -45,10 +41,6 @@ export const TechnologiesModels: Technologies[] = [
       {
         name: 'React',
         img: react
-      },
-      {
-        name: 'VueJS',
-        img: vuejs
       },
       {
         name: 'Bootstrap',

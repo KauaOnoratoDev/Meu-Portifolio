@@ -17,7 +17,7 @@ export const ExperiencesModels: Experiences[] = [
     id: 1,
     projectName: 'eFood',
     projectDescription:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo repellat ab, magnam accusantium nihil veniam nam ipsam quisquam reiciendis quas unde expedita officiis placeat, hic blanditiis harum modi aperiam. Repudiandae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci illo corrupti eaque voluptate! Expedita, odio. Iure omnis nesciunt repellendus, earum sit laborum quis quia eveniet alias officiis. Corrupti, unde itaque!',
+      'Um cardápio online, com diversos restaurantes, cada um com pratos únicos e maravilhosos. Site integrado com uma Api externa e desenvolvido com React. Meu projeto mais desafiador no meu início como desenvolvedor front-end, Pude testar todos os meus conhecimentos adquiridos até o momento. Site funcional, que envia as informações passadas ao formulário para a Api, utilizando o Formik. ',
     deployLink: 'https://efood-react-mu.vercel.app',
     codeLink: 'https://github.com/KauaOnoratoDev/efood',
     projectImage: eFood
@@ -26,7 +26,7 @@ export const ExperiencesModels: Experiences[] = [
     id: 2,
     projectName: 'Lista de contatos',
     projectDescription:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo repellat ab, magnam accusantium nihil veniam nam ipsam quisquam reiciendis quas unde expedita officiis placeat, hic blanditiis harum modi aperiam. Repudiandae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci illo corrupti eaque voluptate! Expedita, odio. Iure omnis nesciunt repellendus, earum sit laborum quis quia eveniet alias officiis. Corrupti, unde itaque!',
+      'Uma lista de contatos funcional. Primeiro projeto pessoal utilizando React com TypeScript, um projeto desafiador e que foi necessário muita pesquisa e trabalho para concluí-lo. Usei Redux e Redux toolkit para a criação de uma Store, onde criei funções usadas para a interação do usuário com a aplicação. ',
     deployLink: 'https://lista-de-contatos-react-gray.vercel.app',
     codeLink: 'https://github.com/KauaOnoratoDev/Lista-de-contatos-React',
     projectImage: listaContados
@@ -35,7 +35,7 @@ export const ExperiencesModels: Experiences[] = [
     id: 3,
     projectName: 'Calculadora IMC',
     projectDescription:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo repellat ab, magnam accusantium nihil veniam nam ipsam quisquam reiciendis quas unde expedita officiis placeat, hic blanditiis harum modi aperiam. Repudiandae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci illo corrupti eaque voluptate! Expedita, odio. Iure omnis nesciunt repellendus, earum sit laborum quis quia eveniet alias officiis. Corrupti, unde itaque!',
+      'Uma calculadora de IMC. Projeto utilizando React com Vite, um site simples com poucas funcionalidades, porém super funcional. Utilizei o Vite para um desenvolvimento mais dinâmico e Css Modules para estilização do site. ',
     deployLink: 'https://imc-react-three.vercel.app',
     codeLink: 'https://github.com/KauaOnoratoDev/Imc-React',
     projectImage: calculadoraImc
@@ -44,7 +44,7 @@ export const ExperiencesModels: Experiences[] = [
     id: 4,
     projectName: 'Clone Disney+',
     projectDescription:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo repellat ab, magnam accusantium nihil veniam nam ipsam quisquam reiciendis quas unde expedita officiis placeat, hic blanditiis harum modi aperiam. Repudiandae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci illo corrupti eaque voluptate! Expedita, odio. Iure omnis nesciunt repellendus, earum sit laborum quis quia eveniet alias officiis. Corrupti, unde itaque!',
+      'Projeto responsivo inspirado no site do Disney Plus. Com este projeto, pude testar meus conhecimentos em JavaScript para melhor interação do usuário com o site, Sass para estilização da página e Gulp para automação do fluxo de trabalho. ',
     deployLink: 'https://clone-disneyplus-jade-nu.vercel.app',
     codeLink: 'https://github.com/KauaOnoratoDev/clone-disneyplus',
     projectImage: cloneDisney
