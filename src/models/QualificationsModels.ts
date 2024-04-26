@@ -4,6 +4,7 @@ type Qualifications = {
   date: string[]
   certificateLink: string
   id: number
+  status: boolean
 }
 
 export const QualificationsModels: Qualifications[] = [
@@ -12,13 +13,7 @@ export const QualificationsModels: Qualifications[] = [
     name: 'EBAC',
     qualification: 'Certificado em Full-Stack Python',
     date: ['Março 2023', 'Present'],
-    certificateLink: '#'
-  },
-  {
-    id: 2,
-    name: 'EBAC',
-    qualification: 'Certificado em Full-Stack Python',
-    date: ['Março 2023', 'Present'],
-    certificateLink: '#'
+    certificateLink: '#',
+    status: false
   }
 ]

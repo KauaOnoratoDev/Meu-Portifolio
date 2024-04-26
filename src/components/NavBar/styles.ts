@@ -15,6 +15,16 @@ export const NavBarStyle = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: ${breakpoints.mobile}) {
+    .is-active {
+      display: flex;
+    }
+
+    .is-disabled {
+      display: none;
+    }
+  }
 `
 
 export const List = styled.ul`

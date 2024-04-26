@@ -1,7 +1,13 @@
 import styled from 'styled-components'
 import { breakpoints, colors } from '../../styles'
+import { Props } from './index'
 
-export const Item = styled.li`
+export const list = styled.ul`
+  display: flex;
+  flex-direction: column-reverse;
+`
+
+export const Item = styled.li<Props>`
   border: 1px solid ${colors.gray700};
   border-radius: 80px;
   padding: 32px 45px;
@@ -20,7 +26,8 @@ export const Item = styled.li`
   }
 
   a {
-    color: ${colors.green};
+    color: ${(props) =>
+      props.status === true ? `${colors.green}` : `${colors.gray300}`};
     transition: 0.3s ease;
 
     &:hover {
