@@ -38,7 +38,15 @@ export const GlobalStyle = createGlobalStyle`
               width: 90%;
             }
         }
-    }
+
+        .is-active {
+          display: flex;
+        }
+
+        .is-disabled {
+          display: none;
+        }
+      }
 
     body {
         background-color: ${colors.gray900};

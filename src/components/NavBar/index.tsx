@@ -7,21 +7,38 @@ import { RootReducer } from '../../store'
 import githubIcon from '../../assets/images/github-icon.png'
 import linkedinIcon from '../../assets/images/linkedin-icon.png'
 import * as S from './styles'
+import { useState } from 'react'
 
 const NavBar = () => {
   const dispatch = useDispatch()
   const { status } = useSelector((state: RootReducer) => state.home)
+  const [hamActive, setHamActive] = useState(false)
 
   return (
     <S.Container>
       <S.NavBarStyle>
-        <S.List>
-          <S.ListItem onClick={() => dispatch(changeStatus('home'))}>
+        <S.Hamburguer onClick={() => setHamActive(!hamActive)}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </S.Hamburguer>
+        <S.List className={hamActive ? 'is-active' : 'is-disabled'}>
+          <S.ListItem
+            onClick={() => {
+              dispatch(changeStatus('home'))
+              setHamActive(false)
+            }}
+          >
             <Link to={'/'} className={status === 'home' ? 'is-active' : ''}>
               kauaonorato
             </Link>
           </S.ListItem>
-          <S.ListItem onClick={() => dispatch(changeStatus('qualifications'))}>
+          <S.ListItem
+            onClick={() => {
+              dispatch(changeStatus('qualifications'))
+              setHamActive(false)
+            }}
+          >
             <Link
               to={'/qualifications'}
               className={status === 'qualifications' ? 'is-active' : ''}
@@ -29,7 +46,12 @@ const NavBar = () => {
               formação
             </Link>
           </S.ListItem>
-          <S.ListItem onClick={() => dispatch(changeStatus('experiences'))}>
+          <S.ListItem
+            onClick={() => {
+              dispatch(changeStatus('experiences'))
+              setHamActive(false)
+            }}
+          >
             <Link
               to={'/experiences'}
               className={status === 'experiences' ? 'is-active' : ''}

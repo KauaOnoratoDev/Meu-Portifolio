@@ -15,39 +15,49 @@ export const NavBarStyle = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  @media (max-width: ${breakpoints.mobile}) {
-    flex-direction: column;
-  }
 `
 
 export const List = styled.ul`
   display: flex;
 
   @media (max-width: ${breakpoints.mobile}) {
-    &:nth-child(1) {
+    &:nth-child(2) {
       flex-direction: column;
     }
   }
 
-  &:nth-child(1) {
+  &:nth-child(2) {
     li {
       margin-right: 32px;
 
       @media (max-width: ${breakpoints.mobile}) {
         margin: 0 0 16px;
-        text-align: center;
+        text-align: start;
       }
     }
   }
 
-  &:nth-child(2) {
+  &:nth-child(3) {
     li {
       margin-left: 32px;
 
       @media (max-width: ${breakpoints.mobile}) {
         margin: 0 8px;
       }
+    }
+  }
+`
+
+export const Hamburguer = styled.div`
+  span {
+    width: 20px;
+    height: 2px;
+    margin-bottom: 4px;
+    background-color: ${colors.purple};
+    display: none;
+
+    @media (max-width: ${breakpoints.mobile}) {
+      display: block;
     }
   }
 `
