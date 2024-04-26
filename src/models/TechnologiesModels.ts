@@ -43,6 +43,10 @@ export const TechnologiesModels: Technologies[] = [
         img: react
       },
       {
+        name: 'VueJs',
+        img: vuejs
+      },
+      {
         name: 'Bootstrap',
         img: bootstrap
       }
